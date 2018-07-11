@@ -8,14 +8,13 @@ aliyun oss 上传脚本
 ```js
 var AliossUploader = require('alioss-uploader');
 
-var upload = new AliossUploader({
+var uploader = new AliossUploader({
   buildPath: './dist/**/*.{js,css,ico,png}',
   region: 'oss-cn-beijing',
   accessKeyId: 'xxxxxxxxxxxxxxxx',
   accessKeySecret: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
   bucket: 'my-bucket',
   internal: true,
-  deleteAll: false,
   generateObjectPath: function(filename, file) {
     return 'projectName/' + file.replace('./dist/', '');
   },
@@ -26,5 +25,5 @@ var upload = new AliossUploader({
   },
 });
 
-upload.start()
+uploader.start()
 ```
