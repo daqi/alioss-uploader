@@ -9,12 +9,12 @@ aliyun oss 上传脚本
 var AliossUploader = require('alioss-uploader');
 
 var uploader = new AliossUploader({
-  buildPath: './dist/**/*.{js,css,ico,png}',
+  uploadPath: './dist/**/*.{js,css,ico,png}',
   region: 'oss-cn-beijing',
   accessKeyId: 'xxxxxxxxxxxxxxxx',
   accessKeySecret: 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx',
   bucket: 'my-bucket',
-  internal: true,
+  internal: false, // 是否内网(默认false)
   generateObjectPath: function(filename, file) {
     return 'projectName/' + file.replace('./dist/', '');
   },

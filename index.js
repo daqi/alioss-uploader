@@ -5,7 +5,7 @@ var glob = require('glob');
 function AliossUploader(options) {
   if (
     !options ||
-    !options.buildPath ||
+    !options.uploadPath ||
     !options.region ||
     !options.accessKeyId ||
     !options.accessKeySecret ||
@@ -60,7 +60,7 @@ AliossUploader.prototype.start = function() {
     .then(function() {
       //上传oss的新代码
       var fileArray = [];
-      glob.sync(_this.options.buildPath, { nodir: true }).forEach(function(filename) {
+      glob.sync(_this.options.uploadPath, { nodir: true }).forEach(function(filename) {
         fileArray.push(filename);
       });
 
