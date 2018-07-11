@@ -1,0 +1,26 @@
+{
+  "name": "alioss-uploader",
+  "version": "0.0.1",
+  "main": "./index.js",
+  "dependencies": {
+    "ali-oss": "^6.0.0",
+    "co": "^4.6.0",
+    "glob": "^7.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daqi/alioss-uploader"
+  },
+  "homepage": "https://github.com/daqi/alioss-uploader",
+  "authors": [
+    "daqi <daqidaqi@qq.com> (https://github.com/daqi)"
+  ],
+  "bugs": {
+    "url": "https://github.com/daqi/alioss-uploader/issues"
+  },
+  "files": [
+    "lib",
+    "src",
+    "template"
+  ]
+}
