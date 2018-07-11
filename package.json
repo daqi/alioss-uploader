@@ -1,6 +1,6 @@
 {
   "name": "alioss-uploader",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "./index.js",
   "dependencies": {
     "ali-oss": "^6.0.0",
